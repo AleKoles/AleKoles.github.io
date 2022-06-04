@@ -1,0 +1,45 @@
+@media screen and (max-width: 1064px) {
+  .name {
+    position: relative;
+    padding-left: 40%;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .about-mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .name {
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .right-side {
+    padding-left: 0px;
+  }
+
+  .about {
+    display: none;
+  }
+
+  .pic {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: none;
+    overflow: hidden;
+  }
+}
