@@ -154,7 +154,7 @@ a {
 }
 
 /* footer - connect styles */
-footer {
+html footer {
   display: flex;
   background-color: #ffbd59;
   justify-content: space-around;
