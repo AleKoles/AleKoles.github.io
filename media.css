@@ -12,6 +12,11 @@
 }
 
 @media screen and (max-width: 850px) {
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  
   .name {
     position: relative;
     padding-left: 0;
