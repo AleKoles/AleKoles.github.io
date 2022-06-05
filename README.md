@@ -1,2 +1,0 @@
-# alekoles.io
-Web CV
