@@ -104,6 +104,7 @@ header {
 
 .card img {
   width: 40px;
+  max-height: 40px;
 }
 
 .language .text {
