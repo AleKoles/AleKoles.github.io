@@ -49,7 +49,6 @@ html hr {
 /* heading styles */
 header {
   background-color: #ffbd59;
-  
 }
 .name {
   position: relative;
@@ -104,8 +103,8 @@ header {
 }
 
 .card img {
-  width: 40px;
-  max-height: 40px;
+  width: 35px;
+  max-height: 35px;
 }
 
 .language .text {
@@ -184,4 +183,3 @@ footer a {
 footer a:hover {
   color: #fff;
 }
-
