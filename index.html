@@ -48,101 +48,123 @@
           </div>
           <div class="hard">
             <h3>skills</h3>
-            <img
-              class="codewars"
-              src="https://www.codewars.com/users/AleKole/badges/micro?theme=light"
-              alt="CodeWars"
-            />
+            <div class="skills-buttons">
+              <img
+                class="codewars"
+                src="https://www.codewars.com/users/AleKole/badges/micro?theme=light"
+                alt="CodeWars"
+              />
+              <a
+                class="toggle"
+                href="javascript:;"
+                onmousedown="toggleDiv('mydiv');"
+                >SWITCH ICONS TO TEXT</a
+              >
+            </div>
+
             <hr />
-            <div class="card-deck">
-              <div class="card">
-                <img
-                  class="card-img-top"
-                  src="img/html.png"
-                  alt="HTML"
-                  title="HTML"
-                />
+
+            <div id="mydivon" style="display: block">
+              <div class="card-deck">
+                <div class="card">
+                  <img
+                    class="card-img-top"
+                    src="img/html.png"
+                    alt="HTML"
+                    title="HTML"
+                  />
+                </div>
+                <div class="card">
+                  <img
+                    class="card-img-top"
+                    src="img/css.png"
+                    alt="CSS"
+                    title="CSS"
+                  />
+                </div>
+                <div class="card">
+                  <img
+                    class="card-img-top"
+                    src="img/sass.png"
+                    alt="Sass"
+                    title="Sass"
+                  />
+                </div>
+                <div class="card">
+                  <img
+                    class="card-img-top"
+                    src="img/bootstrap.png"
+                    alt="Bootstrap"
+                    title="Bootstrap"
+                  />
+                </div>
+                <div class="card">
+                  <img
+                    class="card-img-top"
+                    src="img/tailwind-css-2.svg"
+                    alt="Tailwind CSS"
+                    title="Tailwind CSS"
+                  />
+                </div>
+                <div class="card">
+                  <img
+                    class="card-img-top"
+                    src="img/javascript.png"
+                    alt="JS"
+                    title="JS"
+                  />
+                </div>
+                <div class="card">
+                  <img
+                    class="card-img-top"
+                    src="img/react.svg"
+                    alt="React"
+                    title="React"
+                  />
+                </div>
+                <div class="card">
+                  <img
+                    class="card-img-top"
+                    src="img/github.png"
+                    alt="GitHub"
+                    title="GitHub"
+                  />
+                </div>
+                <div class="card">
+                  <img
+                    class="card-img-top"
+                    src="img/api.png"
+                    alt="API"
+                    title="API"
+                  />
+                </div>
+                <div class="card figma">
+                  <img
+                    class="card-img-top"
+                    src="img/Figma-logo.svg"
+                    alt="Figma"
+                    title="Figma"
+                  />
+                </div>
+                <div class="card">
+                  <img
+                    class="card-img-top"
+                    src="img/ps.png"
+                    alt="Photoshop"
+                    title="Photoshop"
+                  />
+                </div>
               </div>
-              <div class="card">
-                <img
-                  class="card-img-top"
-                  src="img/css.png"
-                  alt="CSS"
-                  title="CSS"
-                />
-              </div>
-              <div class="card">
-                <img
-                  class="card-img-top"
-                  src="img/sass.png"
-                  alt="Sass"
-                  title="Sass"
-                />
-              </div>
-              <div class="card">
-                <img
-                  class="card-img-top"
-                  src="img/bootstrap.png"
-                  alt="Bootstrap"
-                  title="Bootstrap"
-                />
-              </div>
-              <div class="card">
-                <img
-                  class="card-img-top"
-                  src="img/tailwind-css-2.svg"
-                  alt="Tailwind CSS"
-                  title="Tailwind CSS"
-                />
-              </div>
-              <div class="card">
-                <img
-                  class="card-img-top"
-                  src="img/javascript.png"
-                  alt="JS"
-                  title="JS"
-                />
-              </div>
-              <div class="card">
-                <img
-                  class="card-img-top"
-                  src="img/react.svg"
-                  alt="React"
-                  title="React"
-                />
-              </div>
-              <div class="card">
-                <img
-                  class="card-img-top"
-                  src="img/github.png"
-                  alt="GitHub"
-                  title="GitHub"
-                />
-              </div>
-              <div class="card">
-                <img
-                  class="card-img-top"
-                  src="img/api.png"
-                  alt="API"
-                  title="API"
-                />
-              </div>
-              <div class="card figma">
-                <img
-                  class="card-img-top"
-                  src="img/Figma-logo.svg"
-                  alt="Figma"
-                  title="Figma"
-                />
-              </div>
-              <div class="card">
-                <img
-                  class="card-img-top"
-                  src="img/ps.png"
-                  alt="Photoshop"
-                  title="Photoshop"
-                />
-              </div>
+            </div>
+            <div id="mydivoff" style="display: none">
+              <ul>
+                <li>HTML, CSS, Sass</li>
+                <li>Bootstrap, Tailwind CSS</li>
+                <li>JS, React</li>
+                <li>Github, Git</li>
+                <li>Photoshop, Figma, Premiere Pro</li>
+                <li>Jira, Confluence, Trello, Notion</li>
+              </ul>
             </div>
           </div>
           <div class="language">
@@ -371,5 +393,6 @@
         ></a>
       </footer>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>

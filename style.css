@@ -91,7 +91,30 @@ header {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
+}
+
+.skills-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.toggle {
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ab7626;
+  border-radius: 4px;
+  padding: 2px 4px;
+  border: solid 2px #ab7626;
+  transition: 150ms ease-in-out;
+  background-color: #fff;
+}
+
+.toggle:hover {
+  color: white;
+  background-color: #ffbd59;
+  border-color: #ffbd59;
 }
 
 .card-deck {
@@ -123,14 +146,14 @@ header {
   font-weight: 300;
   line-height: 2;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .language ul {
   -webkit-margin-start: -30px;
-          margin-inline-start: -30px;
+  margin-inline-start: -30px;
   margin-top: 0;
   list-style: none;
 }
@@ -197,4 +220,4 @@ footer a {
 
 footer a:hover {
   color: #fff;
-}/*# sourceMappingURL=style.css.map */
+}
