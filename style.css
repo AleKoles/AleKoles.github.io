@@ -1,13 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
-
-html body {
+body {
   margin-bottom: 32px;
   padding: 0;
   /* background-color: #f7e5ca; */
   font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
 }
 
-html .container {
+.container {
   margin: 0 auto;
   padding: 0;
   max-width: 1120px;
@@ -46,10 +45,12 @@ html hr {
   width: 150px;
   opacity: 100%;
 }
+
 /* heading styles */
 header {
   background-color: #ffbd59;
 }
+
 .name {
   position: relative;
   padding-left: 35%;
@@ -64,6 +65,7 @@ header {
   font-size: 45px;
   text-transform: uppercase;
 }
+
 .name h2 {
   font-weight: 400;
   font-size: 30px;
@@ -88,8 +90,10 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
+
 .card-deck {
   display: flex;
   flex-direction: row;
@@ -118,17 +122,23 @@ header {
   text-align: left;
   font-weight: 300;
   line-height: 2;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .language ul {
-  margin-inline-start: -30px;
+  -webkit-margin-start: -30px;
+          margin-inline-start: -30px;
   margin-top: 0;
   list-style: none;
 }
+
 .language span:hover {
   color: #ab7626;
 }
+
 .language .percent {
   position: relative;
   width: 100%;
@@ -138,6 +148,7 @@ header {
   margin-top: 5px;
   border-radius: 3px;
 }
+
 .language .percent div {
   position: absolute;
   top: 0%;
@@ -148,7 +159,6 @@ header {
 }
 
 /* right side */
-
 .projects a {
   color: #ab7626;
   text-decoration: none;
@@ -161,7 +171,7 @@ header {
 }
 
 /* footer - connect styles */
-html footer {
+footer {
   display: flex;
   background-color: #ffbd59;
   justify-content: space-around;
@@ -187,4 +197,4 @@ footer a {
 
 footer a:hover {
   color: #fff;
-}
+}/*# sourceMappingURL=style.css.map */
