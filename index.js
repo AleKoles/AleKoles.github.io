@@ -1,6 +1,6 @@
 function toggleDiv(divid) {
-  varon = divid + "on";
-  varoff = divid + "off";
+  let varon = divid + "on";
+  let varoff = divid + "off";
 
   if (document.getElementById(varon).style.display == "block") {
     document.getElementById(varon).style.display = "none";
