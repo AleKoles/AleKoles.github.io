@@ -99,6 +99,12 @@ header {
   justify-content: space-between;
 }
 
+.toggle-container {
+  display: flex;
+  justify-content: end;
+  padding-bottom: 4px;
+}
+
 .toggle {
   font-size: 14px;
   text-decoration: none;
@@ -121,6 +127,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
   flex-wrap: wrap;
 }
 

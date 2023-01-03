@@ -21,7 +21,7 @@
       src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
     ></script>
 
-    <title>Aleksandra Kolesnikova | Frontend Developer CV</title>
+    <title>Oleksandra Kolesnikova | Frontend Developer CV</title>
     <link rel="icon" href="/img/favicon.svg" />
     <script
       src="https://kit.fontawesome.com/e8ea9704f9.js"
@@ -32,7 +32,7 @@
     <div class="container">
       <header>
         <div class="name">
-          <h1>Aleksandra Kolesnikova</h1>
+          <h1>Oleksandra Kolesnikova</h1>
           <h2>Frontend Developer</h2>
         </div>
       </header>
@@ -46,32 +46,29 @@
             <h3>about me</h3>
             <hr />
             <p>
-              I am a frontend developer and content creator passionate about
-              coding and creative problem-solving. I have commercial experience
-              as a frontend freelancer, and have partaken in a number of
-              non-profit projects.<br />
+               A junior frontend developer passionate about delivering outstanding user experience.
+              With over 6 months' experience as a frontend freelancer and a few projects made for
+              non-profits my tech toolkit includes: HTML, CSS, Sass, Bootstrap, Tailwind CSS, JS, Alpine.js, basic React,
+              GreenSock, GitHub, and MODX CMS.<br><br>
+              After taking Design Basics course I have knowledge of key design principles and can use a range of Adobe
+              products (Photoshop, Premiere Pro) and Figma.
+              <br><br>
+              Having worked as a game writer and content creator (blogs, corporate Confluence articles,
+              company newsletters, and educational materials) I have dabbed in SEO and keyword planning.
+              <br><br>
+              Finally, my vast experience as an educator and a Teacher Trainer has taught me outstanding
+              communication skills and made me an eager and fast learner.
             </p>
           </div>
           <div class="hard">
             <h3>skills</h3>
-            <div class="skills-buttons">
-              <img
-                class="codewars"
-                src="https://www.codewars.com/users/Alekole/badges/micro?theme=light"
-                alt="CodeWars"
-              />
-              <a
-                class="toggle"
-                href="javascript:;"
-                onmousedown="toggleDiv('mydiv');"
-                >ICONS OR TEXT</a
-              >
-            </div>
-
             <hr />
-
-            <div id="mydivon" style="display: block">
-              <div class="card-deck">
+            <div x-data="{ open: true, toggle() { this.open = ! this.open }}">
+              <div class="toggle-container">
+                 <button class="toggle" x-text=" open ? 'LIST': 'ICONS'" @click="toggle()"></button>
+              </div>
+                <div x-show="open" x-transition>
+                    <div class="card-deck">
                 <div class="card">
                   <img
                     class="card-img-top"
@@ -170,17 +167,19 @@
                   />
                 </div>
               </div>
+                </div>
+                <div x-show="!open" x-transition>
+                  <ul>
+                    <li>HTML, CSS, Sass</li>
+                    <li>Bootstrap, Tailwind CSS</li>
+                    <li>JS, Alpine.js, GSAP, React</li>
+                    <li>Github, Git</li>
+                    <li>Photoshop, Figma, Premiere Pro</li>
+                    <li>Jira, Confluence, Trello, Notion</li>
+                  </ul>
+                </div>
             </div>
-            <div id="mydivoff" style="display: none">
-              <ul>
-                <li>HTML, CSS, Sass</li>
-                <li>Bootstrap, Tailwind CSS</li>
-                <li>JS, Alpine.js, GSAP, React</li>
-                <li>Github, Git</li>
-                <li>Photoshop, Figma, Premiere Pro</li>
-                <li>Jira, Confluence, Trello, Notion</li>
-              </ul>
-            </div>
+
           </div>
           <div class="language">
             <h3>Languages</h3>
@@ -221,24 +220,22 @@
           <div class="edu">
             <h3>education</h3>
             <hr />
-            <h5><strong>CISCO Networking Academy</strong></h5>
-            <p><em>JS Essentials</em></p>
-
             <h5><strong>SheCodes (2022)</strong></h5>
             <p>
               <em>Frontend Development Bootcamp<br />React Bootcamp</em>
             </p>
-
+            <h5><strong>CISCO Networking Academy (2022)</strong></h5>
+            <p><em>JS Essentials</em></p>
             <h5><strong>CyberBionic Systematics (2022)</strong></h5>
             <p>
               <em
-                >HTML&CSS Course<br />
+                >HTML&amp;CSS Course<br />
                 Python basics Course</em
               >
             </p>
             <h5><strong>Codecademy (2022)</strong></h5>
             <p>
-              <em>Learn HTML<br />Learn Command Line</em>
+              <em>HTML&amp;CSS<br />Command Line</em>
             </p>
             <h5>
               <strong>East Central University, Oklahoma, USA (2007)</strong>
@@ -261,19 +258,19 @@
           <div class="about">
             <h3>about me</h3>
             <hr />
-            <p>
-              I am a frontend developer and content creator passionate about
-              coding and creative problem-solving. I have commercial experience
-              as a frontend freelancer, a few projects made for non-profits, and
-              several pet projects completed on my learning journey.<br />
-              I have written content for blogs, corporate Confluence articles,
-              and company newsletters. SEO and keyword planning basics
-              supplement my skillset in this area.<br />
-              I also have a firm grasp of key design principles and can use a
-              range of Adobe products, Figma, and InVision. <br />My vast
-              experience as an educator and a Teacher Trainer has taught me
-              outstanding communication skills and made me an eager and fast
-              learner.
+             <p>
+              A junior frontend developer passionate about delivering outstanding user experience.
+              With over 6 months' experience as a frontend freelancer and a few projects made for
+              non-profits my tech toolkit includes: HTML, CSS, Sass, Bootstrap, Tailwind CSS, JS, Alpine.js, basic React,
+              GreenSock, GitHub, and MODX CMS.<br><br>
+              After taking Design Basics course I have knowledge of key design principles and can use a range of Adobe
+              products (Photoshop, Premiere Pro) and Figma.
+              <br><br>
+              Having worked as a game writer and content creator (blogs, corporate Confluence articles,
+              company newsletters, and educational materials) I have dabbed in SEO and keyword planning.
+              <br><br>
+              Finally, my vast experience as an educator and a Teacher Trainer has taught me outstanding
+              communication skills and made me an eager and fast learner.
             </p>
           </div>
           <div class="experience">
@@ -382,6 +379,6 @@
         ></a>
       </footer>
     </div>
-    <script src="index.js"></script>
+    
   </body>
 </html>
