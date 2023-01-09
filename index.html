@@ -33,7 +33,25 @@
       <header>
         <div class="name">
           <h1>Oleksandra Kolesnikova</h1>
-          <h2>Frontend Developer</h2>
+          
+          <div class="w-screen h-screen flex">
+    <div class="max-w-7xl mx-auto"
+         x-data="{
+                    text: '',
+                    textArray : ['Frontend Developer'],
+                    textIndex: 0,
+                    charIndex: 0,
+                    typeSpeed: 100,
+                 }"
+         x-init="setInterval(function(){
+                    let current = $data.textArray[ $data.textIndex ];
+                    $data.text = current.substring(0, $data.charIndex);
+                    $data.charIndex += 1;
+                 }, $data.typeSpeed);">
+        <h2 x-text="text"></h1>
+    </div>
+</div>
+          
         </div>
       </header>
 
@@ -49,15 +67,8 @@
                A junior frontend developer passionate about delivering outstanding user experience.
               With over 6 months' experience as a frontend freelancer and a few projects made for
               non-profits my tech toolkit includes: HTML, CSS, Sass, Bootstrap, Tailwind CSS, JS, Alpine.js, basic React,
-              GreenSock, GitHub, and MODX CMS.<br><br>
-              After taking Design Basics course I have knowledge of key design principles and can use a range of Adobe
-              products (Photoshop, Premiere Pro) and Figma.
-              <br><br>
-              Having worked as a game writer and content creator (blogs, corporate Confluence articles,
-              company newsletters, and educational materials) I have dabbed in SEO and keyword planning.
-              <br><br>
-              Finally, my vast experience as an educator and a Teacher Trainer has taught me outstanding
-              communication skills and made me an eager and fast learner.
+              GreenSock, GitHub, and MODX CMS.<br>
+              
             </p>
           </div>
           <div class="hard">
@@ -379,6 +390,7 @@
         ></a>
       </footer>
     </div>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>

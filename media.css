@@ -12,16 +12,17 @@
 }
 
 @media screen and (max-width: 850px) {
-  body{
+  body {
     margin: 0;
     padding: 0;
   }
-  
+
   .name {
     position: relative;
     padding-left: 0;
     padding-right: 0;
     text-align: center;
+    min-height: 230px;
   }
   .main {
     display: flex;

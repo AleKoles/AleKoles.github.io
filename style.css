@@ -57,6 +57,7 @@ header {
   padding-top: 40px;
   padding-bottom: 30px;
   color: #fff;
+  min-height: 176px;
 }
 
 .name h1 {
@@ -82,6 +83,7 @@ header {
   border-radius: 50%;
   border: 7px solid #fff;
   overflow: hidden;
+  opacity: 0;
 }
 
 .pic img {
